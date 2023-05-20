@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>JavaScript NAME BINGO</title>
+
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"><!-- google font -->
+<link rel="stylesheet" href="css/sanitize.css"><!-- sanitize.cssは、リセットcssと似たもの -->
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="wrapper">
+    <h1 class="text-center">JavaScript NAME BINGO</h1>
+
+<!-- .innner / display: flex; -->
+    <div class="inner">
+<!-- lottery-area / flex:1 1 auto; / 抽選ボタンなど 幅を可変 -->
+      <div class="lottery-area">
+        <span id="number"></span>
+        <button id="btn-start" class="btn">抽選</button>
+        <!-- 最初ストップボタンはdisable -->
+        <button id="btn-stop" class="btn disable">ストップ</button>
+      </div>
+
+<!-- .result-area / flex:0 0 300px;/ 抽選結果リスト 幅を固定 -->
+      <div class="result-area">
+        <h2 class="text-center">結果</h2>
+        <ul class="result-list">
+          <!-- <li></li> -->
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,73 @@
+@charset "UTF-8";
+body{
+    font-family: 'Roboto', "Hiragino Kaku Gothic ProN", "Hiragino Kaku Gothic Pro", "游ゴシック", YuGothic,'Meiryo UI',Meiryo,"ＭＳ ゴシック",Arial, sans-serif;	
+}
+
+.wrapper{
+    max-width:960x;
+    margin: 32px auto;
+}
+
+.inner{
+    display: flex;
+}
+
+.lottery-area{
+    display: flex;
+    /* display: flex;は横並びだが、flex-direction:column;を加えると縦になる */
+    flex-direction:column;
+    justify-content: center;
+    align-items:center;
+    flex:1 1 auto; /* 幅を可変 flex:1 1 auto; */
+    height: 320px;
+}
+
+#number{
+    margin-bottom:40px;
+    font-size: 2.4rem;
+}
+
+.result-area{
+    flex:0 0 300px; /* 幅を固定 width: 300pxとほぼ同じ */
+}
+
+.text-center{
+    text-align: center;
+}
+
+.btn{
+    display: block;
+    width: 160px;
+    margin: 20px;
+    padding: 8px;
+    background-color: #4950a4;
+    color:#fff;
+    cursor:pointer;
+}
+
+.disable{
+/* pointer-events: none; クリックしても何も反応しない */
+    pointer-events: none;
+    background-color: #aaa;
+}
+
+.result-list{
+/* 「・」を消す */
+    list-style:none;
+}
+
+/* 結果が書き込まれる時のstyle */
+.result-item{
+    /* 上下、左右 */
+    padding: 10px 20px;
+    border-top:solid 1px #aaa;
+}
+
+
+
+
+
+
+
+
+
